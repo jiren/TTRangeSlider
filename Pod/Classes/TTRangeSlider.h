@@ -72,4 +72,42 @@ IB_DESIGNABLE
  */
 @property (nonatomic, assign) IBInspectable float step;
 
+/**
+ * Handle Diameter. Default is 32.0
+ */
+@property (nonatomic, assign) IBInspectable float handleDiameter;
+
+
+/**
+ * Width of slider bar. Default is 1.0
+ */
+@property (nonatomic, assign) IBInspectable float sliderLineWidth;
+
+
+/**
+ * Slider Line Color. Default is Gray
+ */
+@property (nonatomic, assign) IBInspectable UIColor *sliderLineColor;
+
+/**
+ * Color of selected range bar. Default is Green
+ */
+@property (nonatomic, assign) IBInspectable UIColor *handlerColor;
+
+
+/**
+ * Color of selected range bar. Default is Green
+ */
+@property (nonatomic, assign) IBInspectable UIColor *selectedBarColor;
+
+/**
+ *  Shpow animation on touch
+ */
+@property (nonatomic, assign) IBInspectable BOOL animateOnTouch;
+
+/**
+ * Label font.
+ */
+@property (nonatomic,assign) UIFont* lableFont;
+
 @end
