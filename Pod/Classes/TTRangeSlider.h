@@ -98,7 +98,7 @@ IB_DESIGNABLE
 /**
  * Color of selected range bar. Default is Green
  */
-@property (nonatomic, assign) IBInspectable UIColor *selectedBarColor;
+@property (nonatomic, assign) IBInspectable UIColor *selectedRangeColor;
 
 /**
  *  Shpow animation on touch

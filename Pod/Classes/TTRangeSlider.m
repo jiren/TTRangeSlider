@@ -45,6 +45,7 @@ static const CGFloat kLabelsFontSize = 12.0f;
     _step = 0.1f;
     _sliderLineWidth = 1.0f;
     _sliderLineColor = [UIColor lightGrayColor];
+    _selectedRangeColor = [UIColor lightGrayColor];
     _handleDiameter = 32.0f;
     _animateOnTouch = NO;
     _handlerColor = self.tintColor;
@@ -492,9 +493,9 @@ static const CGFloat kLabelsFontSize = 12.0f;
     [self updateLabelValues];
 }
 
--(void)setSelectedBarColor:(UIColor *)selectedBarColor{
-    _selectedBarColor = selectedBarColor;
-    self.selectedSliderLine.backgroundColor = _selectedBarColor.CGColor;
+-(void)setSelectedRangeColor:(UIColor *)selectedBarColor{
+    _selectedRangeColor = selectedBarColor;
+    self.selectedSliderLine.backgroundColor = _selectedRangeColor.CGColor;
 }
 
 -(void)setHandleDiameter:(float)handleDiameter{
@@ -507,7 +508,7 @@ static const CGFloat kLabelsFontSize = 12.0f;
 
 -(void)setSliderLineColor:(UIColor *)sliderLineColor{
     _sliderLineColor = sliderLineColor;
-    self.selectedSliderLine.backgroundColor = _sliderLineColor.CGColor;
+    self.sliderLine.backgroundColor = _sliderLineColor.CGColor;
 }
 
 -(void)setLableFont:(UIFont *)lableFont{
