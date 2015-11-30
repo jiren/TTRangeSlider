@@ -46,8 +46,7 @@
     NSNumberFormatter *customFormatter = [[NSNumberFormatter alloc] init];
     customFormatter.positiveSuffix = @"B";
     self.rangeSliderCustom.numberFormatterOverride = customFormatter;
-   // self.rangeSliderCustom.
-    self.rangeSliderCustom.lableFont =  [UIFont systemFontOfSize:40];
+    self.rangeSliderCustom.lableFont =  [UIFont fontWithName:@"Helvetica-Bold" size:14.0];
 }
 
 - (void)didReceiveMemoryWarning {
